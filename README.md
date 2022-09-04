@@ -7,6 +7,6 @@
 ### Descrição do Projeto:
 #### Neste contexto, modelamos um sistema de gerenciamento de biblioteca, seu acervo e o controle de entrada e saídas dos livros, manutenção de usuários e emissão de relatórios.   O sistema deverá otimizar os processos, tornado os mais ágeis, confiáveis de fácil interação com o intuito de incentivar a leitura a todos dando suporte as atividades inerentes ao ambiente. 
 #### O sistema é baseado na arquitetura Cliente-Servidor, com um núcleo de conjuntos e procedimentos utilizando a linguagem Java e armazenamento de dados.
-Nossa missão na construção deste aplicativo é contribuir para o reaquecimento da economia no setor, apoiar as bibliotecas e escolas utilizando uma ferramenta de baixo custo e fácil interação com os usuários além de incentivar a leitura proporcionando a população o acesso a livros.
+#### Nossa missão na construção deste aplicativo é contribuir para o reaquecimento da economia no setor, apoiar as bibliotecas e escolas utilizando uma ferramenta de baixo custo e fácil interação com os usuários além de incentivar a leitura proporcionando a população o acesso a livros.
 
 
