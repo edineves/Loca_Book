@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="cadastro" >
+        <a class="links" id="paracadastro"></a>
+    
+         <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p> 
+            <label for="nome_cad">Nome: </label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+            <label for="data_cad">Data de Nascimento: </label>
+            <input id="data_cad" name="data_cad" required="required" type="number" placeholder="  /  /    "/>
+          </p>
+          
+          <p> 
+            <label for="cpf_cad">CPF: </label>
+            <input id="cpf_cad" name="cpf_cad" required="required" type="number" placeholder="Digite seu CPF" />
+            <label for="rg_cad">RG: </label>
+            <input id="rg_cad" name="rg_cad" required="required" type="number" placeholder="Digite seu RG"/>
+          </p>
+
+          <p> 
+            <label for="nomemae_cad">Nome da Mãe: </label>
+            <input id="nomemae_cad" name="nomemae_cad" required="required" type="text" placeholder="..." />
+          </p>
+
+          <p>
+            <label for="nomepai_cad">Nome do Pai: </label>
+            <input id="nomepai_cad" name="nomepai_cad" required="required" type="text" placeholder="..."/>
+          </p>
+
+          <p> 
+            <label for="endereco_cad">Endereço: </label>
+            <input id="endereco_cad" name="endereco_cad" required="required" type="text" placeholder="..."/> 
+            <label for="bairro_cad">Bairro:</label>
+            <input id="bairro_cad" name="bairro_cad" required="required" type="text" placeholder="Digite seu Bairro!"/>
+          </p>
+          
+          <P>
+            <label for="cep_cad">CEP: </label>
+            <input for="cep_cad" name="cep_cad" required="required" type="number" placeholder="00000-000"/>
+          </p>
+
+          <p> 
+            <label for="estado_cad">Estado: </label>
+            <input id="estado_cad" name="estado_cad" required="required" type="text" placeholder="Digite o Estado" />
+            <label for="cidade_cad">Cidade: </label>
+            <input id="cidade_cad" name="cidade_cad" required="required" type="text" placeholder="Digite a Cidade"/>
+          </p>
+           
+          <p> 
+            <label for="telefone_cad">Telefone: </label>
+            <input id="telefone_cad" name="telefone_cad" required="required" type="number" placeholder="(00)0000-00000"/>
+            <label for="celular_cad">Celular: </label>
+            <input id="celular_cad" name="celular_cad" required="required" type="number" placeholder="(00)0000-00000"/>
+          </p>
+
+          <p>
+            <input type="checkbox" name="menoridade" id="menoridade" value="">
+            <label for="menoridade">Usuário menor de idade!</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+        
+          
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
+</body>
