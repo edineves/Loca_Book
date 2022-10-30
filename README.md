@@ -9,4 +9,6 @@
 ##### O sistema é baseado na arquitetura Cliente-Servidor, com um núcleo de conjuntos e procedimentos utilizando a linguagem Java e armazenamento de dados.
 ##### Nossa missão na construção deste aplicativo é contribuir para o reaquecimento da economia no setor, apoiar as bibliotecas e escolas utilizando uma ferramenta de baixo custo e fácil interação com os usuários além de incentivar a leitura proporcionando a população o acesso a livros.
 
+Formulário de acesso para cadastro e consultas:  https://edineves.github.io/LocaBook/
+
 
