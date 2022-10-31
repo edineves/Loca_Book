@@ -1,22 +1,116 @@
-body{
+* { margin: 0; padding: 0; }
+body {
     background-image: linear-gradient(to right, rgb(253, 253, 253), rgb(182, 190, 190))
 }
 
-.logo{
-    width: 370px;
-    padding: 5% 0 0;
+.logo {
+    width: absolute;
+    padding-top: 10px;
     margin: auto;
-    
+
+}
+
+.img-src img {
+    width: 150px;
+}
+
+.menu {
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    float: center;
+    text-align: center;
+}
+
+.menu li {
+    position: relative;
+    float: center;
+    border-right: 1px solid #1c59c2;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: #333;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px 0 #CCC;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
 }
 
 
-.login-page{
+
+
+
+
+
+
+
+
+
+.livros {
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px;
+}
+
+.nomeLivro {
+    color: #003366;
+    border-bottom: solid 1px #003366;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-page {
     width: 720px;
     padding: 8% 0 0;
     margin: auto;
 }
 
-.form{
+.form {
     position: relative;
     z-index: 1;
     background: #FFFFFF;
@@ -39,7 +133,7 @@ body{
     font-size: 14px;
 }
 
-.form button{
+.form button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
@@ -54,8 +148,9 @@ body{
     cursor: pointer;
 }
 
-.form button:hover, .form
-button:active, .form button:focus{
+.form button:hover,
+.form button:active,
+.form button:focus {
     background: rgb(9, 9, 9);
 }
 
@@ -65,12 +160,12 @@ button:active, .form button:focus{
     font-size: 12px;
 }
 
-.form .message a{
-    color:black;
+.form .message a {
+    color: black;
     text-decoration: none;
 }
 
-.cadastro{
+.cadastro {
     position: relative;
     z-index: 1;
     background: #FFFFFF;
@@ -93,7 +188,7 @@ button:active, .form button:focus{
     font-size: 14px;
 }
 
-.contato{
+.contato {
     position: relative;
     z-index: 1;
     background: #FFFFFF;
@@ -121,12 +216,12 @@ button:active, .form button:focus{
     padding: 0;
     box-sizing: border-box;
 }
-
+/* VERIFICAAAAAAAAAR
 .livros {
     display: flex;
     justify-content: space-evenly;
 }
-
+*/
 .livro1 {
     width: 400px;
     height: 600px;
@@ -134,71 +229,65 @@ button:active, .form button:focus{
     background-color: rgb(216, 216, 216);
 }
 
-.livro2{
+.livro2 {
     width: 400px;
     height: 600px;
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
 
-.livro3{
+.livro3 {
     width: 400px;
     height: 600px;
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
 
-.livro4{
+.livro4 {
     width: 400px;
     height: 600px;
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
 
-.livro5{
+.livro5 {
     width: 400px;
     height: 600px;
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
 
-.livro6{
+.livro6 {
     width: 400px;
     height: 600px;
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
 
-.livro7{
+.livro7 {
     width: 400px;
     height: 600px;
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
 
-.livro8{
+.livro8 {
     width: 400px;
     height: 600px;
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
 
-.livro9{
+.livro9 {
     width: 400px;
     height: 600px;
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
 
-.livro10{
+.livro10 {
     width: 400px;
     height: 600px;
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
-
-.img-src img {
-    width: 150px;
-    height: 200px;
-}
-
