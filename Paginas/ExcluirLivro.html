@@ -4,37 +4,39 @@
 <head>
 
     <meta charset="UTF-8" />
-    <title>Livros</title>
+    <title>Loca Book® | Excluir Livros</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> EXCLUIR LIVRO </title>
+    <title> EXCLUIR LIVROS </title>
 
 
-    <link rel="stylesheet" href="./assets/estilo/normalize.css">
-    <link rel="stylesheet" href="./assets/estilo/reset.css">
-    <link rel="stylesheet" href="./assets/estilo.css">
-
+    <link rel="stylesheet" href="./css/style_forms.css">
 
 </head>
 
-<body>s
-    <center>
+<body>
+    <form>
         <table border="1">
             <form action="ServletLivros?cmd=exc" method="post">
                 <tbody>
                     <tr>
                         <th colspan="2">
-                            <h2> Excluir Livro </h2>
+                            <img src="img/Logotipo.jpg" class="logo">
                         </th>
                     </tr>
                     <tr>
-                        <td> ISB do Livro:</td>
+                        <th colspan="2">
+                            <h2> Excluir Livros </h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><strong>ISB do Livro:</strong></td>
                         <td>
-                            <input type="text" name="txtCa" size="30" maxlenght="30" />
+                            <input type="text" name="txtCa" size="30" maxlenght="3 0" />
                         </td>
                     </tr>
 
@@ -45,11 +47,71 @@
                 </tbody>
             </form>
         </table>
-    </center>
-    <center>
-        <a href="index.html"> voltar </a> <br />
-    </center>
+    </form>
+
+    <form>
+        <a href="index.html">
+            < Voltar </a> <br />
+    </form>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+<!-- <head>
+
+    <meta charset="UTF-8" />
+    <title>Excluir Livros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_forms.css" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title class="titulo"> Excluir LIVROS </title>
+
+<body>
+
+    <div>
+        <h1 id="titulo">Excluir Livros</h1>
+        <img src="img/Logotipo.jpg" class="logo">
+        <p id="subtitulo">Insira o ISD do Livro a ser atualizado:</p>
+        <br>
+    </div>
+
+    <form>
+
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="nome"><strong>ISB do Livro:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+        </fieldset>
+
+        <button class="botao" type="submit" onsubmit="">Excluir</button>
+    </form>
+
+
+
+
+
+
+</body>
+
+
+</head>
+
+
+
+
+-->

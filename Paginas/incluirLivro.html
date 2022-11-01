@@ -4,64 +4,87 @@
 <head>
 
 	<meta charset="UTF-8" />
-	<title>Livros</title>
+	<title>Loca Book® | Incluir Livros</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style_forms_include.css" />
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title> INCLUIR LIVRO </title>
 
-	<link rel="stylesheet" href="./assets/estilo/normalize.css">
-	<link rel="stylesheet" href="./assets/estilo/reset.css">
-	<link rel="stylesheet" href="./assets/estilo.css">
 
 </head>
 
-<body>
-	<center>
-		<table border="1" width="42%">
-			<form action="ServletLivros" method="get">
-				<input type="hidden" name="cmd" value="incluir"> <br />
+<form>
+	<table border="1">
+		<form action="ServletLivros?cmd=atu" method="post">
+			<tbody>
 				<tr>
 					<th colspan="2">
-						<h1> Incluir Livro </h1>
+						<img src="img/Logotipo.jpg" class="logo">
 					</th>
 				</tr>
 				<tr>
-					<td> ISB:</td>
-					<td><input type="text" name="txtCa" size="60" maxlength="60"></td>
+					<th colspan="2">
+						<h2>Incluir Livro</h2>
+					</th>
 				</tr>
 				<tr>
-					<td>book Tille:</td>
-					<td><input type="text" name="txtNome" size="60" maxlength="60"></td>
+					<td><strong>ISB:</strong></td>
+					<td>
+						<input type="text" name="txtCa" size="30" maxlenght="3 0" />
+					</td>
 				</tr>
+
 				<tr>
-					<td> Book Autor :</td>
-					<td><input type="text" size="60" name="txtEmail" maxlength="60"></td>
+					<td><strong>Título do Livro:</strong></td>
+					<td>
+						<input type="text" name="txtCa" size="30" maxlenght="3 0" />
+					</td>
 				</tr>
+
 				<tr>
-					<td> Year of Publication:</td>
-					<td><input type="text" name="txtData" size="60" id="dtaNasc" maxlength="60"></td>
+					<td><strong>Autor do Livro:</strong></td>
+					<td>
+						<input type="text" name="txtCa" size="30" maxlenght="3 0" />
+					</td>
 				</tr>
+
+
 				<tr>
-					<td> Publisher:</td>
-					<td><input type="text" name="txtEndereco" size="60" maxlength="60"></td>
+					<td><strong>Ano da Publicação:</strong></td>
+					<td>
+						<input type="month">
+
+					</td>
 				</tr>
+
 				<tr>
-					<td> Imagem URL</td>
-					<td><input type="text" name="txtIdade" size="60" maxlength="60"></td>
+					<td><strong>Editora:</strong></td>
+					<td>
+						<input type="text" name="txtCa" size="30" maxlenght="3 0" />
+					</td>
 				</tr>
+
+				<tr>
+					<td><strong>Imagem URL:</strong></td>
+					<td>
+						<input type="file">
+
+					</td>
+				</tr>
+
+
 				<tr>
 					<td colspan="2" align="center"><input type="submit" value="Enviar"></td>
 				</tr>
-			</form>
-		</table>
-	</center>
 
-	<center>
-		<a href="index.html"> voltar </a> <br />
-	</center>
-
-</body>
+			</tbody>
+		</form>
+	</table>
+	<form>
+		<a href="index.html">
+			< Voltar </a> <br />
+	</form>
+</form>

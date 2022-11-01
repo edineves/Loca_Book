@@ -1,6 +1,27 @@
-* { margin: 0; padding: 0; }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 body {
     background-image: linear-gradient(to right, rgb(253, 253, 253), rgb(182, 190, 190))
+}
+
+
+.button {
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    background-color: #C2D0FF;
+    font-size: 18px;
 }
 
 .logo {
@@ -10,8 +31,17 @@ body {
 
 }
 
+.img_livros {
+    width: 50px;
+}
+
 .img-src img {
     width: 150px;
+}
+
+.img-livro {
+    width: 200px;
+
 }
 
 .menu {
@@ -63,21 +93,15 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-.livros {
-    background-image: url(../img/bg.png);
+.team {
+    background-image: url(../img/backgroud.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 0px;
 }
+
+
 
 .nomeLivro {
     color: #003366;
@@ -85,21 +109,6 @@ body {
     padding-bottom: 5px;
     margin-top: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -139,7 +148,7 @@ body {
     outline: 0;
     background: rgb(146, 176, 236);
     width: 100%;
-    border: 0;
+    border: 1px;
     padding: 15px;
     color: rgb(233, 239, 239);
     font-size: 14px;
@@ -216,78 +225,9 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-/* VERIFICAAAAAAAAAR
+
+
 .livros {
     display: flex;
     justify-content: space-evenly;
-}
-*/
-.livro1 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
-}
-
-.livro2 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
-}
-
-.livro3 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
-}
-
-.livro4 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
-}
-
-.livro5 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
-}
-
-.livro6 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
-}
-
-.livro7 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
-}
-
-.livro8 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
-}
-
-.livro9 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
-}
-
-.livro10 {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(216, 216, 216);
 }

@@ -4,60 +4,75 @@
 <head>
 
     <meta charset="UTF-8" />
-    <title>Livros</title>
+    <title>Loca Book® | Emprestar Livros</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_forms_include.css" />
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title> EMPRESTAR LIVRO </title>
 
-    <link rel="stylesheet" href="./assets/estilo/normalize.css">
-    <link rel="stylesheet" href="./assets/estilo/reset.css">
-    <link rel="stylesheet" href="./assets/estilo.css">
 
 </head>
 
-<body>
-    <center>
-        <table border="1">
-            <form action="ServletLivros?cmd=atu" method="post">
-                <tbody>
-                    <tr>
-                        <th colspan="2">
-                            <h2> Emprestar Livro </h2>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td> Codigo do usuário: </td>
-                        <td>
-                            <input type="text" name="txtCa" size="30" maxlenght="30" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> ISB: </td>
-                        <td><input type="text" name="txtCa" size="60" maxlength="60"></td>
-                    </tr>
-                    <tr>
-                        <td> Data Emprestimo: </td>
-                        <td><input type="text" name="txtNome" size="60" maxlength="60"></td>
-                    </tr>
-                    <tr>
-                        <td> Data Devolução:</td>
-                        <td><input type="text" size="60" name="txtEmail" maxlength="60"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center"><input type="submit" value="Enviar"></td>
-                    </tr>
+<form>
+    <table border="1">
+        <form action="ServletLivros?cmd=atu" method="post">
+            <tbody>
+                <tr>
+                    <th colspan="2">
+                        <img src="img/Logotipo.jpg" class="logo">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <h2>Emprestar Livro</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td><strong>Cod. do Usuário:</strong></td>
+                    <td>
+                        <input type="text" name="txtCa" size="30" maxlenght="3 0" />
+                    </td>
+                </tr>
 
-                </tbody>
-            </form>
-        </table>
-    </center>
-    <center>
-        <a href="index.html"> voltar </a> <br />
-    </center>
+                <tr>
+                    <td><strong>ISB do Livro:</strong></td>
+                    <td>
+                        <input type="text" name="txtCa" size="30" maxlenght="3 0" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Data de Empréstimo:</strong></td>
+                    <td>
+                        <input id="date" type="date">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Data de Devolução:</strong></td>
+                    <td>
+                        <input id="date" type="date" min="2022-01-01">
+
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Enviar"></td>
+                </tr>
+
+            </tbody>
+        </form>
+    </table>
+</form>
+<form>
+    <a href="index.html">
+        < Voltar </a> <br />
+</form>
 
 </body>
 

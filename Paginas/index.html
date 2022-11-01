@@ -1,37 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Livros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <meta charset="UTF-8" />
-    <title>Livros</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> ACERVO DE LIVROS </title>
-
-    <link rel="stylesheet" href="./assets/estilo/normalize.css">
-    <link rel="stylesheet" href="./assets/estilo/reset.css">
-    <link rel="stylesheet" href="./assets/estilo.css">
 
 </head>
 
-<body background="silver">
-
+<body>
     <h5>
         <nav class="logo">
-            <p class="img-src" align="center">
+            <p align="center">
                 <img src="img/Logotipo.jpg">
             </p>
         </nav>
     </h5>
 
 
-    <h3 align="center"> CADASTRO DE LIVROS </h3>
+    <h3 align="center">CADASTRO DE LIVROS</h3>
 
     <nav>
         <ul class="menu">
@@ -47,189 +40,100 @@
         </ul>
     </nav>
 
-    <section class="livros">
+
+    <section class="team">
         <div class="container">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-lg-3 text-right">
-                                <h1 class="nomeLivro">Pai Rico, Pai Pobre - Edição de 20 anos</h1>
-                                <p>A escola prepara as crianças para o mundo real? Essa é a primeira pergunta com a qual
-                                    o leitor se
-                                    depara neste livro.
-                                    O recado é ousado e direto: boa formação e notas altas não bastam para assegurar o
-                                    sucesso de
-                                    alguém. O mundo mudou;
-                                    a maioria dos jovens tem cartão de crédito, antes mesmo de concluir os estudos, e
-                                    nunca teve aula
-                                    sobre dinheiro, investimentos,
-                                    juros etc.</p>
-                                <button><a href="emprestarLirvo.html">Reservar</a></button>
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="img/livro1.jpg" class="img-responsive">
-                            </div>
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="text-center">
+                            <img class="img-livro" src="img/livro1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <h1 class="nomeLivro">Pai Rico, Pai Pobre - Edição de 20 anos.</h1>
 
-                            <div class="col-lg-3">
-                                <img src="img/livro2.jpg" class="img-responsive">
-                            </div>
+                        <p>A escola prepara as crianças para o mundo real? Essa é a primeira
+                            pergunta
+                            com a qual
+                            o leitor se
+                            depara neste livro.
+                            O recado é ousado e direto: boa formação e notas altas não bastam para
+                            assegurar o
+                            sucesso de
+                            alguém. O mundo mudou;
+                            a maioria dos jovens tem cartão de crédito, antes mesmo de concluir os
+                            estudos, e
+                            nunca teve aula
+                            sobre dinheiro, investimentos,
+                            juros etc.</p>
 
-
-                            <div class="col-lg-3">
-                                <h1 class="nomeLivro">A Raiva Não Educa. A Calma Educa.</h1>
-                                <p>
-                                    MAYA EIGENMANN, pedagoga e educadora parental, convida você a repensar tudo o que
-                                    sabe sobre educar
-                                    crianças, mostrando que esse processo
-                                    não precisa (nem deve) ser autoritário, constrangedor e ameaçador. Isso significa
-                                    que o objetivo é
-                                    desenvolver o
-                                    respeito da criança e do adolescente, e não a obediência, pura e simplesmente.
-                                </p>
-                                <button><a href="emprestarLirvo.html">Reservar</a></button>
-                            </div>
+                        <div class="text-center">
+                            <input type="button" value="Enviar" href="emprestarLirvo.html">
                         </div>
                     </div>
-
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-lg-3 text-right">
-                                <h1 class="nomeLivro">O Cérebro da Criança</h1>
-                                <p>O Cérebro da Criança, número 1 em vendas na Amazon e best-seller do New York Times,
-                                    lançado pela
-                                    nVersos Editora. O neuropsiquiatra Daniel J. Siegel
-                                    e a psicoterapeuta Tina PayneBryson criaram um livro magistral direcionado a pais e
-                                    educadores para
-                                    ajudar as crianças no processo de amadurecimento
-                                    de sua inteligência emocional. Um método brilhante que transforma as interações
-                                    cotidianas em
-                                    momentos valiosos.</p>
-                                <button><a href="emprestarLirvo.html">Reservar</a></button>
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="img/livro3.jpg" class="img-responsive">
-                            </div>
-
-                            <div class="col-lg-3">
-                                <img src="img/livro4.jpg" class="img-responsive">
-                            </div>
-
-
-                            <div class="col-lg-3">
-                                <h1 class="nomeLivro">Neurociência e Educação.</h1>
-                                <p>
-                                    O cérebro é responsável pela forma como processamos as informações, armazenamos o
-                                    conhecimento e
-                                    selecionamos nosso comportamento, dessa forma
-                                    compreender seu funcionamento, seu potencial e as melhores estratégias de favorecer
-                                    seu pleno
-                                    desenvolvimento é foco principal de estudo e trabalho
-                                    tanto dos profissionais da saúde mental como da educação.
-                                </p>
-                                <button><a href="emprestarLirvo.html">Reservar</a></button>
-                            </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="img-livro" src="img/livro2.jpg" class="d-block w-100" alt="...">
+                        <h1 class="nomeLivro">A Raiva Não Educa. A Calma Educa.</h1>
+                        <p>
+                            MAYA EIGENMANN, pedagoga e educadora parental, convida você a repensar
+                            tudo
+                            o que
+                            sabe sobre educar
+                            crianças, mostrando que esse processo
+                            não precisa (nem deve) ser autoritário, constrangedor e ameaçador. Isso
+                            significa
+                            que o objetivo é
+                            desenvolver o
+                            respeito da criança e do adolescente, e não a obediência, pura e
+                            simplesmente.
+                        </p>
+                        <div class="text-center" href="emprestarLirvo.html">
+                            <button type="button" class="button">
+                                Reservar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-livro" src="img/livro3.jpg" class="d-block w-100" alt="...">
+                        <h1 class="nomeLivro">O Cérebro da Criança.</h1>
+                        <p>O Cérebro da Criança, número 1 em vendas na Amazon e best-seller do New
+                            York
+                            Times,
+                            lançado pela
+                            nVersos Editora. O neuropsiquiatra Daniel J. Siegel
+                            e a psicoterapeuta Tina PayneBryson criaram um livro magistral
+                            direcionado a
+                            pais e
+                            educadores para
+                            ajudar as crianças no processo de amadurecimento
+                            de sua inteligência emocional. Um método brilhante que transforma as
+                            interações
+                            cotidianas em
+                            momentos valiosos.</p>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary" href="emprestarLirvo.html">Reservar</button>
                         </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </section>
 
 
 
-    <!-- LIvros
-    <div class="livro5">
-        <h1>Vamos lidar com a Hiperativa e o Déficit de Atenção</h1>
-        <div class="img-src">
-            <img src="img/livro5.jpg">
-        </div>
-        <section>
-            <p>
-                Você é incrível.
-                Todos nós temos características que nos tornam especiais. Para você e outras milhões de crianças
-                pelo mundo, uma delas é o TDAH (transtorno do
-                déficit de atenção com hiperatividade).
-            </p>
-        </section>
-        <div class="reservar"></div>
-        <button><a href="emprestarLirvo.html">Reservar</a></button>
-    </div>
-
-    <div class="livro6">
-        <h1>Teorias psicogenéticas em discussão</h1>
-        <div class="img-src">
-            <img src="img/livro6.jpg">
-        </div>
-        <section>
-            <p>
-                Jean Piaget, Lev S. Vigotski e Henri Wallon são os três maiores teóricos estudados no universo da
-                educação e da psicologia. Nesta obra, consagrada
-                por crítica e público, Yves de La Taille, Marta Kohl de Oliveira e Heloysa Dantas traduzem para o
-                leitor o pensamento vivo desses autores.
-            </p>
-        </section>
-        <div class="reservar"></div>
-        <button><a href="emprestarLirvo.html">Reservar</a></button>
-    </div>
-
-    <div class="livro7">
-        <h1>Ideologia e Propaganda na Educação</h1>
-        <div class="img-src">
-            <img src="img/livro7.jpg">
-        </div>
-        <section>
-            <p>
-                Qual é o poder da escola na formação cultural de uma nação? Como ela pode contribuir para predispor
-                os jovens a reproduzir situações de opressão,
-                em vez de transformá-las.
-                A educação é assediada explicitamente por discursos como o da formação 'para o mercado de trabalho',
-                mas não haveria outros ainda, tão ou mais
-                perigosos, operando
-            </p>
-        </section>
-        <div class="reservar"></div>
-        <button><a href="emprestarLirvo.html">Reservar</a></button>
-    </div>
-
-    <div class="livro8">
-        <h1>Tic-tac - é tempo de aprender</h1>
-        <div class="img-src">
-            <img src="img/livro8.jpg">
-        </div>
-        <section>
-            <p>
-                A Coleção Tic-Tac – É Tempo de Aprender – Integrado já havia sido nomeada pelos professores como “A
-                preferida do Brasil”. Então, como melhorar o
-                que já é ótimo? Foi essa a pergunta que a autora da obra e a Editora do Brasil fizeram a professores
-                de todo o país. E com base em suas respostas,
-                a coleção foi reformulada para ficar do jeito que eles queriam.
-            </p>
-        </section>
-        <div class="reservar"></div>
-        <button><a href="emprestarLirvo.html">Reservar</a></button>
-    </div>
-
-    <div class="livro9">
-        <h1>A Criança Montessori</h1>
-        <div class="img-src">
-            <img src="img/livro9.jpg">
-        </div>
-        <section>
-            <p>
-                Em A Criança Montessori, Simone Davis, especialista em educação Montessori e proprietária da escola
-                Jacaranda Tree Montessori School em Amsterdã,
-                descreve como desenvolver a educação infantil de maneira gratificante, repleta de respeito e
-                descobertas sobre o tempo de aprendizagem de cada um,
-                além de enfocar as singularidades dos pequenos.
-            </p>
-        </section>
-        <div class="reservar"></div>
-        <button><a href="emprestarLirvo.html">Reservar</a></button>
-        -->
-    </section>
 
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
