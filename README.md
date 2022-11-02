@@ -11,4 +11,6 @@
 
 Formulário de acesso para cadastro e consultas:  https://edineves.github.io/LocaBook/
 
+Visite nosso modelo: https://edineves.github.io/Loca_Book/
+
 
