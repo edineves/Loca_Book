@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-image: linear-gradient(to right, rgb(253, 253, 253), rgb(182, 190, 190))
+}
+
+
+.button {
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    background-color: #C2D0FF;
+    font-size: 18px;
+}
+
+.logo {
+    width: absolute;
+    padding-top: 10px;
+    margin: auto;
+
+}
+
+.img_livros {
+    width: 50px;
+}
+
+.img-src img {
+    width: 150px;
+}
+
+.img-livro {
+    width: 200px;
+
+}
+
+.menu {
+    list-style: none;
+    border: 1px solid #c0c0c0;
+	@@ -63,22 +93,16 @@ body {
+
+
+
+.team {
+    background-image: url(../img/backgroud.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px;
+}
+
+
+
+.nomeLivro {
+    color: #003366;
+    border-bottom: solid 1px #003366;
+	@@ -89,21 +113,6 @@ body {
+
+
+
+.login-page {
+    width: 720px;
+    padding: 8% 0 0;
+	@@ -139,7 +148,7 @@ body {
+    outline: 0;
+    background: rgb(146, 176, 236);
+    width: 100%;
+    border: 1px;
+    padding: 15px;
+    color: rgb(233, 239, 239);
+    font-size: 14px;
+	@@ -216,78 +225,9 @@ body {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.livros {
+    display: flex;
+    justify-content: space-evenly;

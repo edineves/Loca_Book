@@ -1,0 +1,74 @@
+<head>
+
+    <meta charset="UTF-8" />
+    <title>Loca Book® | Emprestar Livros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_forms_include.css" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> EMPRESTAR LIVRO </title>
+
+
+</head>
+
+<form>
+    <table border="1">
+        <form action="ServletLivros?cmd=atu" method="post">
+            <tbody>
+                <tr>
+                    <th colspan="2">
+                        <img src="img/Logotipo.jpg" class="logo">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <h2>Emprestar Livro</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td><strong>Cod. do Usuário:</strong></td>
+                    <td>
+                        <input type="text" name="txtCa" size="30" maxlenght="3 0" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>ISB do Livro:</strong></td>
+                    <td>
+                        <input type="text" name="txtCa" size="30" maxlenght="3 0" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Data de Empréstimo:</strong></td>
+                    <td>
+                        <input id="date" type="date">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Data de Devolução:</strong></td>
+                    <td>
+                        <input id="date" type="date" min="2022-01-01">
+
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Enviar"></td>
+                </tr>
+
+            </tbody>
+        </form>
+    </table>
+</form>
+<form>
+    <a href="index.html">
+        < Voltar </a> <br />
+</form>
+
+</body>
