@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
 
     <meta charset="UTF-8" />
@@ -5,79 +8,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-
+    <link REL="shortcut icon" href="img\favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Devolver Livro </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+
+    <title> Devolver Livros</title>
 
 
     <link rel="stylesheet" href="./css/style_forms.css">
 
 </head>
+<form>
+    <table border="1">
+        <form action="ServletLivros?cmd=atu" method="post">
+            <tbody>
+                <tr>
+                    <th colspan="2">
+                        <img src="img/Logotipo.jpg" class="logo">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <h2>Devolver Livro</h2>
+                    </th>
+                </tr>
 
-<body>
-    <form>
-        <table border="1">
-            <form action="ServletLivros?cmd=atu" method="post">
-                <tbody>
-                    <tr>
-                        <th colspan="2">
-                            <img src="img/Logotipo.jpg" class="logo">
-                        </th>
-                    </tr>
-                    <tr>
-                        <th colspan="2">
-                            <h2> Devolver Livro </h2>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td><strong>ISB do Livro:</strong></td>
-                        <td>
-                            <input type="text" name="txtCa" size="30" maxlenght="3 0" />
-                        </td>
-                    </tr>
+                <tr>
+                    <td><strong>ISBN do Livro:</strong></td>
+                    <td>
+                        <input type="text" name="txtCa" size="30" maxlenght="3 0" />
+                    </td>
+                </tr>
 
-	 <h2> Devolver Livro </h2>
-                </tbody>
-            </form>
-        </table>
-    </form>
+                <tr>
+                    <td><strong>Data de Devolução:</strong></td>
+                    <td>
+                        <input id="date" type="date" min="2022-01-01">
 
-    <form>
-        <a href="index.html">
-            < Voltar </a> <br />
-    </form>
+                    </td>
+                </tr>
 
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="button" class="button" data-bs-toggle="modal"
+                            data-bs-target="#JanelaModal">Devolver</button>
+
+                    </td>
+                </tr>
+
+            </tbody>
+        </form>
+    </table>
+
+
+</form>
+<form>
+    <a href="index.html">
+        < Voltar </a> <br />
+</form>
+<div id="JanelaModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Confirmação de Empréstimo do Livro</h3>
+                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h3>
+                    <strng>Devolução de Livro realizada!</strng>
+                </h3>
+                <p>Você realizou a devolução do empréstimo do livro "O Cérebro da Criança" de Daniel J. Siegel - ISBN:
+                    2147483647.</p>
+                <h4>Dados do Usuário que realizou a devolução do Livro:</h4>
+                <p>Usuário: <strong>Anakin Skywalker</strong></p>
+                <p>Cód. Usuário: <strong>202201</strong></p>
+                <p>Data de Empréstimo: <strong>02-11-2022</strong></p>
+                <p>Data de Devolução: <strong>02-11-2022</strong></p>
+                <img src="img/livro3.jpg" width="200px">
+            </div>
+            <div class="modal-footer">
+                <a href="consultarLivros2.html" class="btn btn-secundary">Consultar Livro</a>
+                <a href="index.html" class="btn btn-primary">Ir para Home</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
-
-
-
-<!-- <head>
-    <meta charset="UTF-8" />
-    <title>Devolver Livros</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style_forms.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="titulo"> Devolver LivroS </title>
-<body>
-    <div>
-        <h1 id="titulo">Devolver Livros</h1>
-        <img src="img/Logotipo.jpg" class="logo">
-        <p id="subtitulo">Insira o ISD do Livro a ser atualizado:</p>
-        <br>
-    </div>
-    <form>
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="nome"><strong>ISB do Livro:</strong></label>
-                <input type="text" name="nome" id="nome" required>
-            </div>
-        </fieldset>
-        <button class="botao" type="submit" onsubmit="">Atualizar</button>
-    </form>
-</body>
-</head>

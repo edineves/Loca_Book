@@ -4,62 +4,133 @@
 <head>
 
 	<meta charset="UTF-8" />
-	<title>Livros</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>Loca Book® | Incluir Livro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<link REL="shortcut icon" href="img\favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-<title> INCLUIR LIVRO </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-<link rel="stylesheet" href="./assets/estilo/normalize.css">
-<link rel="stylesheet" href="./assets/estilo/reset.css">
-<link rel="stylesheet" href="./assets/estilo.css">
+
+	<title> Incluir Livro</title>
+
+
+	<link rel="stylesheet" href="./css/style_forms.css">
 
 </head>
-<body>
-	<center>
-	<table border="1" width="42%">
-	<form action="ServletLivros" method="get">   
-		<input type = "hidden" name ="cmd" value="incluir"> <br />
-		<tr>
-			<th colspan="2"><h1> Incluir Livro </h1></th>
-		</tr>	
-		<tr>
-			<td> ISB:</td> 
-			<td><input type = "text" name = "txtCa"  size="60" maxlength = "60"></td>
-			</tr>
-		<tr>
-			<td>book Tille:</td> 
-			<td><input type = "text" name =  "txtNome" size="60" maxlength = "60"></td>
-		</tr>	
-		<tr>
-			<td> Book Autor :</td> <td><input type = "text" size="60" name = "txtEmail" 
-maxlength = "60"></td>
-		</tr>
-		<tr>
-			<td> Year of Publication:</td> 
-			<td><input type = "text" name = "txtData" size="60" id = "dtaNasc" 
-maxlength = "60"></td>
-		</tr>
-		<tr>
-			<td> Publisher:</td> 
-			<td><input type = "text" name = "txtEndereco" size="60" maxlength = "60"></td>
-		</tr>
-		<tr>
-			<td> Imagem URL</td> 
-			<td><input type = "text" name = "txtIdade" size="60" maxlength = "60"></td>
-		</tr>
-		<tr>
-			<td colspan="2" align="center"><input type="submit" value="Enviar"></td>
-		</tr>	
-	</form>
+<form>
+	<table border="1">
+		<form action="ServletLivros?cmd=atu" method="post">
+			<tbody>
+				<tr>
+					<th colspan="2">
+						<img src="img/Logotipo.jpg" class="logo">
+					</th>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<h2>Incluir Livro</h2>
+					</th>
+				</tr>
+
+				<tr>
+					<td><strong>ISBN do Livro:</strong></td>
+					<td>
+						<input type="text" name="txtCa" size="30" maxlenght="3 0" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>Título do Livro:</strong></td>
+					<td>
+						<input type="text" name="txtCa" size="30" maxlenght="3 0" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>Autor do Livro:</strong></td>
+					<td>
+						<input type="text" name="txtCa" size="30" maxlenght="3 0" />
+					</td>
+				</tr>
+
+
+				<tr>
+					<td><strong>Ano da Publicação:</strong></td>
+					<td>
+						<input type="month">
+
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>Editora:</strong></td>
+					<td>
+						<input type="text" name="txtCa" size="30" maxlenght="3 0" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>Imagem URL:</strong></td>
+					<td>
+						<input type="file">
+
+					</td>
+				</tr>
+
+
+
+				<tr>
+					<td colspan="2" align="center">
+						<button type="button" class="button" data-bs-toggle="modal" data-bs-target="#JanelaModal">Incluir
+							Livro</button>
+					</td>
+				</tr>
+
+			</tbody>
+		</form>
 	</table>
-	</center>
 
-	<center>
-        <a href="index.html"> voltar </a> <br />       		
-    </center> 
 
+</form>
+<form>
+	<a href="index.html">
+		< Voltar </a> <br />
+</form>
+<div id="JanelaModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-dialog-scrollable modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">Confirmação de Cadastro do Livro</h3>
+				<button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+			</div>
+			<div class="modal-body">
+				<h3>
+					<strng>Cadastro de livro efetivado!</strng>
+				</h3>
+				<p>Você realizou o cadastro do livro "O Cérebro da Criança" no sistema Loca Book.
+				</p>
+				<p>ISBN: <strong>1</strong></p>
+				<p>Título: <strong>"O Cérebro da Criança"</strong></p>
+				<p>Autor: <strong>Daniel J. Siegel</strong></p>
+				<p>Ano: <strong>2015</strong></p>
+				<p>Editora: <strong>nVersos Editora</strong></p>
+				<p>Imagem:<br> <img src="img/livro3.jpg" width="200px"></p>
+			</div>
+			<div class="modal-footer">
+				<a href="index.html" class="btn btn-primary">Ir para Home</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
+
+</html>
